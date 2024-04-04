@@ -1,6 +1,6 @@
 # JavaScript30
 
-This is my version of a [Javascript course](https://javascript30.com) made by [Wes Bos](https://github.com/wesbos). I highly recommend you to take the course. It's completely free and of high quality!
+This repository contains my versions of JavaScript challenges from the [Javascript course](https://javascript30.com) created by [Wes Bos](https://github.com/wesbos). I highly recommend taking the course. It's completely free and of high quality!
 
 ![](https://javascript30.com/images/JS3-social-share.png)
 
