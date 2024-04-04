@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1 class="title">JavaScript Drum kit</h1>
+        <div class="keys">
+          <div class="key" data-key="A">
+            <span class="key-name">A</span>
+            <span class="key-description">CLAP</span>
+          </div>
+          <div class="key" data-key="S">
+            <span class="key-name">S</span>
+            <span class="key-description">HIHAT</span>
+          </div>
+          <div class="key" data-key="D">
+            <span class="key-name">D</span>
+            <span class="key-description">KICK</span>
+          </div>
+          <div class="key" data-key="F">
+            <span class="key-name">F</span>
+            <span class="key-description">OPENHAT</span>
+          </div>
+          <div class="key" data-key="G">
+            <span class="key-name">G</span>
+            <span class="key-description">BOOM</span>
+          </div>
+          <div class="key" data-key="H">
+            <span class="key-name">H</span>
+            <span class="key-description">RIDE</span>
+          </div>
+          <div class="key" data-key="J">
+            <span class="key-name">J</span>
+            <span class="key-description">SNARE</span>
+          </div>
+          <div class="key" data-key="K">
+            <span class="key-name">K</span>
+            <span class="key-description">TOM</span>
+          </div>
+          <div class="key" data-key="L">
+            <span class="key-name">L</span>
+            <span class="key-description">TINK</span>
+          </div>
+        </div>
+        <div class="volume">
+          <h2 class="volume-title">
+            Volume: <span class="volume-view">50%</span>
+          </h2>
+          <input type="range" name="volume" id="volume" value="50" max="100" />
+        </div>
+      </section>
+      <div class="audios">
+        <audio data-key="A" src="./sounds/clap.wav"></audio>
+        <audio data-key="S" src="./sounds/hihat.wav"></audio>
+        <audio data-key="D" src="./sounds/kick.wav"></audio>
+        <audio data-key="F" src="./sounds/openhat.wav"></audio>
+        <audio data-key="G" src="./sounds/boom.wav"></audio>
+        <audio data-key="H" src="./sounds/ride.wav"></audio>
+        <audio data-key="J" src="./sounds/snare.wav"></audio>
+        <audio data-key="K" src="./sounds/tom.wav"></audio>
+        <audio data-key="L" src="./sounds/tink.wav"></audio>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
