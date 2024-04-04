@@ -5,3 +5,6 @@ This repository contains my versions of JavaScript challenges from the [Javascri
 ![](https://javascript30.com/images/JS3-social-share.png)
 
 You can find the course repository here: [JavaScript30](https://github.com/wesbos/JavaScript30)
+
+## Links (Codepen)
+[01 - JavaScript Drum Kit](https://codepen.io/jhow_/pen/OJGQPEO)
