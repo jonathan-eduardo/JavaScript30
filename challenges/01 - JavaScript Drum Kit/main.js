@@ -35,7 +35,6 @@ function getCurrentVolume() {
 }
 
 function updateVolumeView() {
-  console.log(this.value)
   volumeView.textContent = this.value + '%'
 }
 
