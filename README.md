@@ -8,3 +8,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 
 ## Links (Codepen)
 [01 - JavaScript Drum Kit](https://codepen.io/jhow_/pen/OJGQPEO)
+
+[02 - JS and CSS Clock](https://codepen.io/jhow_/pen/ZEZxMdV)
