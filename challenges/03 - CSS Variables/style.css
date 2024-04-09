@@ -41,12 +41,8 @@ input {
 }
 
 .image {
-  border-style: solid;
-  border-top-width: var(--spacing);
-  border-right-width: var(--spacing);
-  border-bottom-width: var(--spacing);
-  border-left-width: var(--spacing);
-  border-color: var(--base-color);
+  padding: var(--spacing);
+  background: var(--base-color);
   border-radius: var(--border-radius);
   filter: contrast(var(--contrast)) blur(var(--blur));
   width: 100%;
