@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>JavaScript30 - CSS Variables</title>
+  </head>
+  <body>
+    <h1>
+      Update CSS Variables with <span class="base-color-text">JavaScript</span>
+    </h1>
+    <section class="container">
+      <div class="controls">
+        <div class="input-box">
+          <div class="input-group">
+            <h2>Spacing: <span class="spacing-view">0px</span></h2>
+            <input
+              type="range"
+              data-unit="px"
+              name="spacing"
+              id="spacing"
+              min="0"
+              value="0"
+            />
+          </div>
+          <div class="input-group">
+            <h2>Radius: <span class="border-radius-view">0px</span></h2>
+            <input
+              type="range"
+              data-unit="px"
+              name="border-radius"
+              id="border-radius"
+              min="0"
+              value="0"
+              max="150"
+            />
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-group">
+            <h2>Blur: <span class="blur-view">0px</span></h2>
+            <input
+              type="range"
+              data-unit="px"
+              name="blur"
+              id="blur"
+              min="0"
+              value="0"
+              max="30"
+            />
+          </div>
+          <div class="input-group">
+            <h2>Contrast: <span class="contrast-view">100%</span></h2>
+            <input
+              type="range"
+              data-unit="%"
+              name="contrast"
+              id="contrast"
+              min="0"
+              value="100"
+              max="500"
+            />
+          </div>
+        </div>
+        <div class="input-box color">
+          <h2>Base Color</h2>
+          <div class="color-box">
+            <input
+              class="color-input"
+              data-unit="#"
+              type="color"
+              name="base-color"
+              id="base-color"
+              value="#154869"
+            />
+            <label for="base-color">Hex Color: </label>
+            <p class="base-color-view">#154869</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1694363328110-a20f30194653?w=480"
+          alt="a beach covered in lots of rocks next to the ocean"
+          name="image"
+        />
+        <p>
+          <span class="base-color-text">Image</span>: Dragon Eggs Beach by
+          <a href="https://unsplash.com/@salty_morning" target="_blank"
+            >Maria Krasnova
+          </a>
+          on
+          <a
+            href="https://unsplash.com/photos/a-beach-covered-in-lots-of-rocks-next-to-the-ocean-vAmNUb8b6CY"
+            target="_blank"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
