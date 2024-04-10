@@ -13,3 +13,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [02 - JS and CSS Clock](https://codepen.io/jhow_/pen/ZEZxMdV)
 
 [03 - CSS Variables](https://codepen.io/jhow_/pen/BaExRdJ)
+
+[04 - Array Cardio Day 1](https://codepen.io/jhow_/pen/eYorPKw)
