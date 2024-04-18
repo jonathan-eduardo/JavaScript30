@@ -17,3 +17,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [04 - Array Cardio Day 1](https://codepen.io/jhow_/pen/eYorPKw)
 
 [05 - Flex Panels Image Gallery](https://codepen.io/jhow_/pen/WNWyeNZ)
+
+[06 - Type Ahead](https://codepen.io/jhow_/pen/OJGBryv)

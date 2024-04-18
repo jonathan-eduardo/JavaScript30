@@ -114,11 +114,6 @@ ul {
   transform: translateY(0px);
 }
 
-.result-item.active .city-details::before {
-  height: 1px;
-  width: 100%;
-}
-
 .result-item:first-child {
   border-radius: 4px 4px 0 0;
 }
