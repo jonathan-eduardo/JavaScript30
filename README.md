@@ -21,3 +21,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [06 - Type Ahead](https://codepen.io/jhow_/pen/OJGBryv)
 
 [07 - Array Cardio Day 2](https://codepen.io/jhow_/pen/BaEqMKX)
+
+[08 - Fun with HTML5 Canvas](https://codepen.io/jhow_/pen/XWQyagJ)
