@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  background-color: #f3f4f6;
+}
+
+label {
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  padding: 2rem;
+  margin-top: 4rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.input-group {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type='checkbox']:checked ~ label {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
