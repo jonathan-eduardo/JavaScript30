@@ -25,3 +25,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [08 - Fun with HTML5 Canvas](https://codepen.io/jhow_/pen/XWQyagJ)
 
 [09 - Dev Tools Domination](https://codepen.io/jhow_/pen/mdgayxB)
+
+[10 - Hold Shift and Check Checkboxes](https://codepen.io/jhow_/pen/WNWPQLj)
