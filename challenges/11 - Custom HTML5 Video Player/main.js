@@ -40,6 +40,7 @@ function handlePlay({ keyCode }) {
   if (!videoDurationInMinutes) {
     videoDurationInMinutes = getVideoTime(videoPlayer.duration)
   }
+  isVideoPlaying = !isVideoPlaying
 
   if (isVideoPlaying) {
     videoPlayer.play()
