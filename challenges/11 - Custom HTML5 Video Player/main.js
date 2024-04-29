@@ -13,7 +13,6 @@ const timeInfo = document.querySelector('.time-info')
 const videoWrapper = document.querySelector('.video-wrapper')
 
 let isVideoPlaying = false
-let progressInterval = null
 let lastVolume = null
 let isPressing = false
 let videoDurationInMinutes = null
@@ -27,11 +26,21 @@ function showControls() {
 }
 
 function hideControls() {
-  if (isVideoPlaying) videoControls.classList.remove('active')
+  if (!videoPlayer.paused) videoControls.classList.remove('active')
 }
 
 function updateCurrentProgress(progress) {
   document.documentElement.style.setProperty('--progress-width', `${progress}%`)
+}
+
+function updatePlayIcon() {
+  if (!videoPlayer.paused) {
+    videoControls.classList.remove('paused')
+    videoControls.classList.add('playing')
+  } else {
+    videoControls.classList.add('paused')
+    videoControls.classList.remove('playing')
+  }
 }
 
 function handlePlay({ keyCode }) {
@@ -40,23 +49,12 @@ function handlePlay({ keyCode }) {
   if (!videoDurationInMinutes) {
     videoDurationInMinutes = getVideoTime(videoPlayer.duration)
   }
-  isVideoPlaying = !isVideoPlaying
 
-  if (isVideoPlaying) {
+  if (videoPlayer.paused) {
     videoPlayer.play()
-    videoControls.classList.remove('paused')
-    videoControls.classList.add('playing')
-    progressInterval = setInterval(() => {
-      const currentProgress = getProgressWidth(videoPlayer.currentTime)
-      updateCurrentProgress(currentProgress)
-      updateVideoTime()
-    }, 1000)
     setTimeout(hideControls, 1000)
   } else {
-    clearInterval(progressInterval)
     videoPlayer.pause()
-    videoControls.classList.add('paused')
-    videoControls.classList.remove('playing')
     showControls()
   }
 }
@@ -68,12 +66,7 @@ function handleRewind() {
 
 function handleForward() {
   const seconds = 10
-  const currentProgress = getProgressWidth(videoPlayer.currentTime)
-
-  updateCurrentProgress(currentProgress.toFixed(2))
-  if (videoPlayer.currentTime < videoPlayer.duration) {
-    videoPlayer.currentTime = videoPlayer.currentTime + seconds
-  }
+  videoPlayer.currentTime = videoPlayer.currentTime + seconds
 }
 
 function handleProgressBar({ offsetX, type }) {
@@ -83,7 +76,7 @@ function handleProgressBar({ offsetX, type }) {
 
     videoPlayer.currentTime = newVideoTime
     updateCurrentProgress(barSize)
-    updateVideoTime()
+    updateVideoTimeInfo()
   }
 }
 
@@ -136,7 +129,7 @@ function getVideoTime(videoSeconds) {
   return `${hours}${minutes}:${seconds.padStart(2, '0')}`
 }
 
-function updateVideoTime() {
+function updateVideoTimeInfo() {
   timeInfo.innerText = `${getVideoTime(
     videoPlayer.currentTime
   )} / ${videoDurationInMinutes}`
@@ -144,14 +137,20 @@ function updateVideoTime() {
 
 videoPlayer.addEventListener('loadeddata', () => {
   videoDurationInMinutes = getVideoTime(videoPlayer.duration)
-  updateVideoTime()
+  updateVideoTimeInfo()
 })
 
+videoPlayer.addEventListener('play', updatePlayIcon)
+videoPlayer.addEventListener('pause', updatePlayIcon)
 videoPlayer.addEventListener('click', handlePlay)
-videoPlayer.addEventListener('pause', () => (isVideoPlaying = false))
 videoPlayer.addEventListener('mouseover', showControls)
 videoPlayer.addEventListener('mouseleave', hideControls)
 videoPlayer.addEventListener('ended', resetControls)
+videoPlayer.addEventListener('timeupdate', () => {
+  const currentProgress = getProgressWidth(videoPlayer.currentTime)
+  updateCurrentProgress(currentProgress)
+  updateVideoTimeInfo()
+})
 
 videoControls.addEventListener('mouseover', showControls)
 videoControls.addEventListener('mouseleave', hideControls)
