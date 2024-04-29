@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript30 - Custom HTML5 Video Player</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="video-wrapper" id="video-wrapper">
+        <video
+          class="video-player"
+          src="./652333414.mp4"
+          type="video/mp4"
+          allowfullscreen
+        ></video>
+        <div class="video-controls">
+          <div class="progress-bar">
+            <div class="progress-current-time"></div>
+          </div>
+          <div class="controls">
+            <div class="left-controls control-box">
+              <button class="button play">
+                <span class="icon play-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.25 21C5.05109 21 4.86032 20.921 4.71967 20.7803C4.57902 20.6397 4.5 20.4489 4.5 20.25V3.74999C4.50002 3.61967 4.53401 3.49159 4.5986 3.3784C4.66319 3.2652 4.75617 3.1708 4.86836 3.10448C4.98056 3.03816 5.1081 3.00223 5.23841 3.00021C5.36872 2.9982 5.49731 3.03018 5.6115 3.09299L20.6115 11.343C20.7291 11.4077 20.8271 11.5029 20.8954 11.6184C20.9637 11.734 20.9998 11.8658 20.9998 12C20.9998 12.1342 20.9637 12.266 20.8954 12.3816C20.8271 12.4971 20.7291 12.5922 20.6115 12.657L5.6115 20.907C5.50076 20.968 5.37641 21 5.25 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <span class="icon pause-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M9 4.5H7.5A1.5 1.5 0 0 0 6 6v12a1.5 1.5 0 0 0 1.5 1.5H9a1.5 1.5 0 0 0 1.5-1.5V6A1.5 1.5 0 0 0 9 4.5Zm7.5 0H15A1.5 1.5 0 0 0 13.5 6v12a1.5 1.5 0 0 0 1.5 1.5h1.5A1.5 1.5 0 0 0 18 18V6a1.5 1.5 0 0 0-1.5-1.5Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="button rewind-10">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M3 13.5a9 9 0 1 0 9-9H9V.75l-4.5 4.5L9 9.75V6h3a7.5 7.5 0 1 1-7.5 7.5H3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M14.723 16.598a2.13 2.13 0 0 1-.96-.203 1.83 1.83 0 0 1-.668-.577 2.68 2.68 0 0 1-.39-.938 5.774 5.774 0 0 1-.127-1.26c-.003-.423.04-.846.127-1.26.07-.334.203-.652.39-.938.172-.244.401-.442.667-.577.3-.141.63-.21.96-.203a1.83 1.83 0 0 1 1.62.75c.387.666.57 1.43.526 2.198a3.921 3.921 0 0 1-.525 2.197 1.83 1.83 0 0 1-1.62.81Zm0-.915a.803.803 0 0 0 .75-.413c.179-.35.274-.739.277-1.133v-1.035a2.48 2.48 0 0 0-.217-1.125.923.923 0 0 0-1.545 0c-.16.353-.234.739-.218 1.125v1.035c-.015.39.059.777.218 1.133a.796.796 0 0 0 .735.412Zm-6.75.817v-.885h1.5v-3.893l-1.395.75-.413-.794 1.74-.976H10.5v4.876h1.335v.922H7.973Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="button forward-10">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M19.5 13.5A7.5 7.5 0 1 1 12 6h3v3.75l4.5-4.5L15 .75V4.5h-3a9 9 0 1 0 9 9h-1.5Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M14.723 16.598a2.13 2.13 0 0 1-.96-.203 1.83 1.83 0 0 1-.668-.577 2.68 2.68 0 0 1-.39-.938 5.774 5.774 0 0 1-.127-1.26c-.003-.423.04-.846.127-1.26.07-.334.203-.652.39-.938.172-.244.401-.442.667-.577.3-.141.63-.21.96-.203a1.83 1.83 0 0 1 1.62.75c.387.666.57 1.43.526 2.198a3.921 3.921 0 0 1-.525 2.197 1.83 1.83 0 0 1-1.62.81Zm0-.915a.803.803 0 0 0 .75-.413c.179-.35.274-.739.277-1.133v-1.035a2.48 2.48 0 0 0-.217-1.125.923.923 0 0 0-1.545 0c-.16.353-.234.739-.218 1.125v1.035c-.015.39.059.777.218 1.133a.796.796 0 0 0 .735.412Zm-6.75.817v-.885h1.5v-3.893l-1.395.75-.413-.794 1.74-.976H10.5v4.876h1.335v.922H7.973Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div class="volume-box">
+                <button class="button volume-button" name="toggle-volume">
+                  <span class="icon muted-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M23.25 9.307 22.192 8.25 19.5 10.943 16.808 8.25 15.75 9.307 18.442 12l-2.692 2.693 1.058 1.057 2.692-2.693 2.692 2.693 1.058-1.057L20.558 12l2.692-2.693ZM13.5 22.5a.75.75 0 0 1-.533-.225L7.252 16.5H2.25a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 1 .75-.75h5.003l5.714-5.775a.75.75 0 0 1 1.058 0 .75.75 0 0 1 .225.525v19.5a.75.75 0 0 1-.75.75Z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="icon unmuted-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                    >
+                      <path
+                        fill="#fff"
+                        d="m20.37 6.06-1.148.968a7.5 7.5 0 0 1-.217 9.922L20.108 18a9 9 0 0 0 .262-11.91v-.03Z"
+                      />
+                      <path
+                        fill="#fff"
+                        d="M16.185 9a4.5 4.5 0 0 1-.135 5.955l1.102 1.02a6 6 0 0 0 .173-7.943L16.185 9ZM13.5 22.5a.75.75 0 0 1-.533-.225L7.252 16.5H2.25a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 1 .75-.75h5.003l5.714-5.775a.75.75 0 0 1 1.058 0 .75.75 0 0 1 .225.525v19.5a.75.75 0 0 1-.75.75Z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <input
+                  type="range"
+                  class="volume"
+                  name="volume"
+                  id="volume"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value="0.5"
+                />
+              </div>
+              <div class="time-info">0:00 / 0:00</div>
+            </div>
+            <div class="right-controls control-box">
+              <button class="button speed-button">1x</button>
+              <button class="button fullscreen-button">
+                <span class="icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.5 12H18V6H12V7.5H16.5V12ZM6 18H12V16.5H7.5V12H6V18Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M19.5 21H4.5C4.1023 20.9996 3.721 20.8414 3.43978 20.5602C3.15856 20.279 3.0004 19.8977 3 19.5V4.5C3.0004 4.1023 3.15856 3.721 3.43978 3.43978C3.721 3.15856 4.1023 3.0004 4.5 3H19.5C19.8977 3.0004 20.279 3.15856 20.5602 3.43978C20.8414 3.721 20.9996 4.1023 21 4.5V19.5C20.9996 19.8977 20.8414 20.279 20.5602 20.5602C20.279 20.8414 19.8977 20.9996 19.5 21ZM4.5 4.5V19.5H19.5007L19.5 4.5H4.5Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
