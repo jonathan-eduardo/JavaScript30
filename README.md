@@ -33,3 +33,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [12 - Key Sequence Detection](https://codepen.io/jhow_/pen/YzMbZQg)
 
 [13 - Slide in on Scroll](https://codepen.io/jhow_/pen/LYvKgyo)
+
+[14 - JavaScript References VS Copying](https://codepen.io/jhow_/pen/oNOrQLL)
