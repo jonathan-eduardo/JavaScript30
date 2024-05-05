@@ -35,3 +35,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [13 - Slide in on Scroll](https://codepen.io/jhow_/pen/LYvKgyo)
 
 [14 - JavaScript References VS Copying](https://codepen.io/jhow_/pen/oNOrQLL)
+
+[15 - LocalStorage and Event Delegation](https://codepen.io/jhow_/pen/vYMoLdV)
