@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JavaScript30 - LocalStorage and Event Delegation</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="restaurant-image">
+        <img
+          src="https://images.unsplash.com/photo-1554679665-f5537f187268"
+          alt="dining table and chair set under four lighted pendant lamps"
+          class="image"
+        />
+      </div>
+      <div class="restaurant-content">
+        <h1 class="content-title">
+          <span class="marker">El</span> Restaurante
+        </h1>
+        <ul class="content-dishes"></ul>
+        <form class="restaurant-form">
+          <input type="text" placeholder="Dish name" class="form-input" />
+          <input
+            type="submit"
+            value="Add dish"
+            class="form-submit primary"
+            id="dish-add"
+          />
+          <input
+            type="submit"
+            value="Toggle all"
+            class="form-submit secondary"
+            id="dish-toggle"
+          />
+          <input
+            type="submit"
+            value="Remove all"
+            class="form-submit secondary danger"
+            id="dish-remove-all"
+          />
+        </form>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
