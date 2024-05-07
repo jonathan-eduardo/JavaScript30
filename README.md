@@ -37,3 +37,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [14 - JavaScript References VS Copying](https://codepen.io/jhow_/pen/oNOrQLL)
 
 [15 - LocalStorage and Event Delegation](https://codepen.io/jhow_/pen/vYMoLdV)
+
+[16 - CSS Text Shadow Mouse Move Effect](https://codepen.io/jhow_/pen/zYQOzEQ)
