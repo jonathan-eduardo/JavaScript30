@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background: #c8d6e5;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.band-container {
+  padding: 24px;
+  background: #222f3e;
+  max-width: 340px;
+  margin: 32px auto;
+  border-radius: 4px;
+}
+
+.band-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.band-list {
+  margin-top: 12px;
+  max-width: 340px;
+}
+
+.band-item {
+  padding: 8px 12px;
+  background: #576574;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.band-item:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.band-item:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.band-item:nth-child(even) {
+  background: #485460;
+}
+
+.sort-button {
+  background-color: #576574;
+  border: none;
+  border-radius: 4px;
+  flex-basis: 38px;
+  cursor: pointer;
+}
+
+.marker {
+  width: 12px;
+  height: 12px;
+  background: #ff9f43;
+  border-radius: 50%;
+}
+
+.band-name {
+  font-size: 18px;
+  line-height: 24px;
+}
