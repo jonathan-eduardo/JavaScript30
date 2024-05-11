@@ -195,4 +195,13 @@ body {
   .videos.horizontal .video .thumbnail {
     width: 100%;
   }
+
+  .change-view {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
