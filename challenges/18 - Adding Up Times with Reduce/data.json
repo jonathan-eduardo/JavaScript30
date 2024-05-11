@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Introduction to HTML5 and CSS3",
+    "description": "Explore HTML5 and CSS3 fundamentals in this comprehensive course.",
+    "author": "Alice Johnson",
+    "views": "10K",
+    "duration": "3:45",
+    "date_posted": "Feb 15, 2023"
+  },
+  {
+    "title": "Mastering Responsive Web Design",
+    "description": "Dive deep into the world of responsive web design with practical examples.",
+    "author": "Michael Smith",
+    "views": "15K",
+    "duration": "4:20",
+    "date_posted": "Mar 10, 2023"
+  },
+  {
+    "title": "JavaScript Fundamentals for Beginners",
+    "description": "Learn JavaScript basics and start building interactive web applications.",
+    "author": "Emily Brown",
+    "views": "20K",
+    "duration": "5:10",
+    "date_posted": "Apr 5, 2023"
+  },
+  {
+    "title": "Advanced CSS Techniques and Tricks",
+    "description": "Discover advanced CSS techniques to enhance your web projects.",
+    "author": "Daniel Lee",
+    "views": "8K",
+    "duration": "3:30",
+    "date_posted": "May 20, 2023"
+  },
+  {
+    "title": "Building Modern Websites with Bootstrap 5",
+    "description": "Build sleek and modern websites using the power of Bootstrap 5 framework.",
+    "author": "Sarah Clark",
+    "views": "12K",
+    "duration": "4:50",
+    "date_posted": "Jun 12, 2023"
+  },
+  {
+    "title": "ES6 Crash Course: The Next Level of JavaScript",
+    "description": "Level up your JavaScript skills with the latest features of ES6.",
+    "author": "Kevin Martinez",
+    "views": "18K",
+    "duration": "5:30",
+    "date_posted": "Jul 8, 2023"
+  },
+  {
+    "title": "Frontend Development with React.js",
+    "description": "Dive into React.js and build dynamic frontend applications.",
+    "author": "Jessica Taylor",
+    "views": "25K",
+    "duration": "6:15",
+    "date_posted": "Aug 17, 2023"
+  },
+  {
+    "title": "SASS and SCSS: Advanced Styling Techniques",
+    "description": "Master SASS and SCSS for efficient CSS styling.",
+    "author": "David Wilson",
+    "views": "30K",
+    "duration": "4:40",
+    "date_posted": "Sep 22, 2023"
+  },
+  {
+    "title": "Learning Vue.js: From Basics to Advanced Concepts",
+    "description": "From basics to complex concepts, unlock the power of Vue.js.",
+    "author": "Jennifer Anderson",
+    "views": "22K",
+    "duration": "5:20",
+    "date_posted": "Oct 11, 2023"
+  },
+  {
+    "title": "Optimizing Web Performance with Gulp.js",
+    "description": "Optimize your web projects for better performance using Gulp.js.",
+    "author": "Matthew Thompson",
+    "views": "16K",
+    "duration": "3:55",
+    "date_posted": "Nov 30, 2023"
+  },
+  {
+    "title": "Angular Essentials: Building Dynamic Web Apps",
+    "description": "Build dynamic web applications with Angular essentials.",
+    "author": "Samantha Roberts",
+    "views": "14K",
+    "duration": "4:15",
+    "date_posted": "Dec 18, 2023"
+  },
+  {
+    "title": "Frontend Design Patterns and Best Practices",
+    "description": "Learn best practices and design patterns for frontend development.",
+    "author": "Andrew Garcia",
+    "views": "28K",
+    "duration": "6:00",
+    "date_posted": "Jan 5, 2024"
+  },
+  {
+    "title": "DOM Manipulation with jQuery",
+    "description": "Harness the power of jQuery for DOM manipulation.",
+    "author": "Olivia Lewis",
+    "views": "11K",
+    "duration": "3:25",
+    "date_posted": "Feb 19, 2024"
+  },
+  {
+    "title": "Introduction to TypeScript for Frontend Developers",
+    "description": "Get started with TypeScript and improve your frontend development workflow.",
+    "author": "James White",
+    "views": "17K",
+    "duration": "4:45",
+    "date_posted": "Mar 8, 2024"
+  },
+  {
+    "title": "UI/UX Design Principles for Web Developers",
+    "description": "Learn key UI/UX design principles to create engaging web experiences.",
+    "author": "Sophia Moore",
+    "views": "21K",
+    "duration": "5:05",
+    "date_posted": "Apr 2, 2024"
+  },
+  {
+    "title": "Mastering Frontend Frameworks: A Comprehensive Guide",
+    "description": "Comprehensive guide to mastering popular frontend frameworks.",
+    "author": "Benjamin Hall",
+    "views": "19K",
+    "duration": "5:15",
+    "date_posted": "May 14, 2024"
+  },
+  {
+    "title": "Creating Accessible Web Content",
+    "description": "Ensure your web content is accessible to all users.",
+    "author": "Lily King",
+    "views": "13K",
+    "duration": "4:35",
+    "date_posted": "Jun 6, 2024"
+  },
+  {
+    "title": "Web Animation with CSS and JavaScript",
+    "description": "Add life to your web projects with CSS and JavaScript animations.",
+    "author": "Christopher Walker",
+    "views": "23K",
+    "duration": "5:25",
+    "date_posted": "Jul 25, 2024"
+  },
+  {
+    "title": "Frontend Security: Best Practices and Techniques",
+    "description": "Secure your frontend applications with industry-standard techniques.",
+    "author": "Emma Harris",
+    "views": "26K",
+    "duration": "5:50",
+    "date_posted": "Aug 9, 2024"
+  },
+  {
+    "title": "Debugging Techniques for Frontend Developers",
+    "description": "Master debugging techniques to troubleshoot frontend issues effectively.",
+    "author": "Ryan Scott",
+    "views": "24K",
+    "duration": "5:40",
+    "date_posted": "Sep 3, 2024"
+  }
+]

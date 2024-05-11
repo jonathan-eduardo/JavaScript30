@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JavaScript30 - Adding Up Times with Reduce</title>
+  </head>
+  <body>
+    <section class="container">
+      <header class="header">
+        <h1 class="header-title">Your Videos</h1>
+        <div class="header-info">
+          <p class="total-duration">
+            TOTAL DURATION:
+            <span class="duration">Loading...</span>
+          </p>
+          <button class="change-view grid">
+            <span class="grid-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+              >
+                <path
+                  fill="#343A40"
+                  d="M0 17.286c0-.868.704-1.572 1.571-1.572h3.143c.868 0 1.572.704 1.572 1.572v3.143c0 .867-.704 1.571-1.572 1.571H1.571A1.571 1.571 0 0 1 0 20.429v-3.143ZM0 1.571C0 .704.704 0 1.571 0h3.143c.868 0 1.572.704 1.572 1.571v3.143c0 .868-.704 1.572-1.572 1.572H1.571A1.571 1.571 0 0 1 0 4.714V1.571ZM0 9.429c0-.868.704-1.572 1.571-1.572h3.143c.868 0 1.572.704 1.572 1.572v3.142c0 .868-.704 1.572-1.572 1.572H1.571A1.571 1.571 0 0 1 0 12.57V9.43ZM7.857 17.286c0-.868.704-1.572 1.572-1.572h3.142c.868 0 1.572.704 1.572 1.572v3.143c0 .867-.704 1.571-1.572 1.571H9.43a1.571 1.571 0 0 1-1.572-1.571v-3.143ZM7.857 1.571C7.857.704 8.561 0 9.43 0h3.142c.868 0 1.572.704 1.572 1.571v3.143c0 .868-.704 1.572-1.572 1.572H9.43a1.571 1.571 0 0 1-1.572-1.572V1.571ZM15.714 17.286c0-.868.704-1.572 1.572-1.572h3.143c.867 0 1.571.704 1.571 1.572v3.143c0 .867-.704 1.571-1.571 1.571h-3.143a1.571 1.571 0 0 1-1.572-1.571v-3.143ZM15.714 1.571c0-.867.704-1.571 1.572-1.571h3.143C21.296 0 22 .704 22 1.571v3.143c0 .868-.704 1.572-1.571 1.572h-3.143a1.571 1.571 0 0 1-1.572-1.572V1.571ZM7.857 9.429c0-.868.704-1.572 1.572-1.572h3.142c.868 0 1.572.704 1.572 1.572v3.142c0 .868-.704 1.572-1.572 1.572H9.43a1.571 1.571 0 0 1-1.572-1.572V9.43ZM15.714 9.429c0-.868.704-1.572 1.572-1.572h3.143c.867 0 1.571.704 1.571 1.572v3.142c0 .868-.704 1.572-1.571 1.572h-3.143a1.571 1.571 0 0 1-1.572-1.572V9.43Z"
+                />
+              </svg>
+            </span>
+            <span class="list-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+              >
+                <path
+                  fill="#343A40"
+                  d="M0 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1ZM0 9a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9ZM0 17a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-4ZM8 1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1ZM8 9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9ZM8 17a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-4Z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </header>
+      <main class="videos"></main>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
