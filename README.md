@@ -41,3 +41,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [16 - CSS Text Shadow Mouse Move Effect](https://codepen.io/jhow_/pen/zYQOzEQ)
 
 [17 - Sort Without Articles](https://codepen.io/jhow_/pen/XWwrVNm)
+
+[18 - Adding Up Times with Reduce](https://codepen.io/jhow_/pen/bGyNByd)
