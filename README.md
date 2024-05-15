@@ -1,6 +1,6 @@
 # JavaScript30
 
-This repository contains my versions of JavaScript challenges from the [Javascript course](https://javascript30.com) created by [Wes Bos](https://github.com/wesbos). I highly recommend taking the course. It's completely free and of high quality!
+This repository contains my JavaScript challenge solutions from the [Javascript course](https://javascript30.com) created by [Wes Bos](https://github.com/wesbos). I highly recommend taking the course. It's completely free and of high quality!
 
 ![](https://javascript30.com/images/JS3-social-share.png)
 
@@ -43,3 +43,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [17 - Sort Without Articles](https://codepen.io/jhow_/pen/XWwrVNm)
 
 [18 - Adding Up Times with Reduce](https://codepen.io/jhow_/pen/bGyNByd)
+
+[19 - Webcam Fun](https://codepen.io/jhow_/pen/qBGObrz)
