@@ -45,3 +45,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [18 - Adding Up Times with Reduce](https://codepen.io/jhow_/pen/bGyNByd)
 
 [19 - Webcam Fun](https://codepen.io/jhow_/pen/qBGObrz)
+
+[20 - Speech Detection](https://codepen.io/jhow_/pen/PovPdqP)
