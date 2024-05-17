@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #212529;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.compass {
+  background: #343a40;
+  border-radius: 48px;
+  padding: 32px;
+}
+
+.compass-icon {
+  display: flex;
+}
+
+.results {
+  font-size: 2rem;
+  font-weight: 900;
+}
