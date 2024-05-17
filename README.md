@@ -47,3 +47,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [19 - Webcam Fun](https://codepen.io/jhow_/pen/qBGObrz)
 
 [20 - Speech Detection](https://codepen.io/jhow_/pen/PovPdqP)
+
+[21 - Geolocation](https://codepen.io/jhow_/pen/gOJadmP)
