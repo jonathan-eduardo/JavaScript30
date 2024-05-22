@@ -49,3 +49,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [20 - Speech Detection](https://codepen.io/jhow_/pen/PovPdqP)
 
 [21 - Geolocation](https://codepen.io/jhow_/pen/gOJadmP)
+
+[22 - Follow Along Link Highlighter](https://codepen.io/jhow_/pen/oNRLzRV)
