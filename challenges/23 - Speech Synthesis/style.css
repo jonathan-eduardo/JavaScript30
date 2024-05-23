@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --default-font: 'Space Grotesk', sans-serif;
+}
+
+select,
+button,
+textarea {
+  font-family: var(--default-font);
+}
+
+body {
+  font-family: var(--default-font);
+  color: #212121;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 64px 16px 24px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.voice-options {
+  width: 100%;
+}
+.voice-select {
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  color: #212121;
+  font-weight: 500;
+  background: #f1f3f5;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+.play {
+  background: #2077e9;
+}
+
+.stop {
+  background: #fa5252;
+}
+
+.voice-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.voice {
+  flex: 1;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  min-width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background: #2077e9;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  top: 6px;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #2077e9;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+input[type='range']::-moz-range-thumb {
+  top: 6px;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background-color: #068fff;
+  border-radius: 50%;
+  border: none;
+}
+
+.speech-text {
+  resize: none;
+  width: 100%;
+  margin-top: 24px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  min-height: 64px;
+  padding: 8px;
+  overflow: hidden;
+}

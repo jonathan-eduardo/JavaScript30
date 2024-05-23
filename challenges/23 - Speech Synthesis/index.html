@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JavaScript30 - Speech Synthesis</title>
+  </head>
+  <body>
+    <form id="speech-form">
+      <div class="inputs">
+        <div class="voice-options">
+          <select
+            name="voice-select"
+            id="voice-select"
+            class="voice-select"
+          ></select>
+        </div>
+        <div class="buttons">
+          <button id="play" class="btn play">
+            <svg
+              width="8"
+              height="10"
+              viewBox="0 0 8 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 9L7 5L1 1L1 9Z"
+                fill="white"
+                stroke="white"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button id="stop" class="btn stop">
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="8" height="8" rx="1" fill="white" />
+            </svg>
+          </button>
+        </div>
+        <div class="voice-controls">
+          <div class="voice pitch">
+            <input
+              class="control"
+              type="range"
+              name="pitch"
+              id="pitch"
+              min="0"
+              max="2"
+              step="0.1"
+            />
+            <label for="pitch">
+              Pitch: <span class="view" data-name="pitch">1</span>
+            </label>
+          </div>
+          <div class="voice rate">
+            <input
+              class="control"
+              type="range"
+              name="rate"
+              id="rate"
+              min="0.1"
+              max="2"
+              step="0.1"
+              value="1"
+            />
+            <label for="rate">
+              Rate: <span class="view" data-name="rate">1</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <textarea
+        class="speech-text"
+        name="speech-text"
+        id="speech-text"
+        placeholder="Type or paste your text here"
+      ></textarea>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
