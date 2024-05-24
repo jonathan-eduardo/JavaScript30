@@ -53,3 +53,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [22 - Follow Along Link Highlighter](https://codepen.io/jhow_/pen/oNRLzRV)
 
 [23 - Speech Synthesis](https://codepen.io/jhow_/pen/zYQBwLX)
+
+[24 - Sticky Nav](https://codepen.io/jhow_/pen/wvbzgaP)
