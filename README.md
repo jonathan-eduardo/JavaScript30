@@ -55,3 +55,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [23 - Speech Synthesis](https://codepen.io/jhow_/pen/zYQBwLX)
 
 [24 - Sticky Nav](https://codepen.io/jhow_/pen/wvbzgaP)
+
+[25 - Event Capture, Propagation, Bubbling and Once](https://codepen.io/jhow_/pen/RwmGKzQ)
