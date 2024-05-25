@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript30 - Event Capture, Propagation, Bubbling and Once</title>
+    <style>
+      :root {
+        --one-before: 'One';
+        --two-before: 'Two';
+        --three-before: 'Three';
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+        color: #fff;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background: #212529;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .box {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .one {
+        background: #343a40;
+        width: 300px;
+        height: 300px;
+      }
+      .two {
+        background: #495057;
+        width: 200px;
+        height: 200px;
+      }
+      .three {
+        background: #868e96;
+        width: 100px;
+        height: 100px;
+      }
+
+      .one::before,
+      .two::before,
+      .three::before {
+        padding: 1rem;
+        content: var(--one-before);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-transform: capitalize;
+      }
+      .two::before {
+        content: var(--two-before);
+      }
+      .three::before {
+        content: var(--three-before);
+      }
+      h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+      }
+      button {
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-size: 18px;
+        background-color: #343a40;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all 0.3s;
+      }
+      button:hover {
+        border: 1px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Click any box</h1>
+
+      <div class="box one" data-value="one">
+        <div class="box two" data-value="two">
+          <div class="box three" data-value="three"></div>
+        </div>
+      </div>
+      <button id="btn-once">Click (event happens once)</button>
+      <button id="btn-bubble">Toggle bubbling</button>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
