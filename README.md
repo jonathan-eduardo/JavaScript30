@@ -59,3 +59,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [25 - Event Capture, Propagation, Bubbling and Once](https://codepen.io/jhow_/pen/RwmGKzQ)
 
 [26 - Stripe Follow Along Nav](https://codepen.io/jhow_/pen/jOoVXjE)
+
+[27 - Click and Drag](https://codepen.io/jhow_/pen/wvbgdYK)
