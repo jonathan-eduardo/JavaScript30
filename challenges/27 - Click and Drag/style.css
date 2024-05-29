@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 94%;
+  max-width: 684px;
+  padding: 32px;
+  background: #e9ecef;
+  margin: 0 32px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 24px;
+  gap: 24px;
+  cursor: grab;
+  user-select: none;
+}
+
+.cards:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+.card {
+  background: #fff;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.image {
+  width: 142px;
+  height: 84px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.content {
+  background: #ced4da;
+  background: linear-gradient(90deg, #dde5ec, #fefefe, #dde5ec);
+  background-size: 200%;
+  border-radius: 4px;
+  animation: animateGradient 1.6s infinite linear;
+}
+
+.small {
+  height: 4px;
+  width: 50%;
+}
+
+.medium {
+  height: 8px;
+}
+
+.large {
+  height: 16px;
+}
+
+@keyframes animateGradient {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -200%;
+  }
+}
+
+.cards::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.cards::-webkit-scrollbar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #ced4da;
+  cursor: pointer;
+}
