@@ -61,3 +61,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [26 - Stripe Follow Along Nav](https://codepen.io/jhow_/pen/jOoVXjE)
 
 [27 - Click and Drag](https://codepen.io/jhow_/pen/wvbgdYK)
+
+[28 - Video Speed Controller](https://codepen.io/jhow_/pen/zYQNzbV)
