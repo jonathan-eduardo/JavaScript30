@@ -30,6 +30,7 @@ body {
   width: 64px;
   background: #fff;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .speed {

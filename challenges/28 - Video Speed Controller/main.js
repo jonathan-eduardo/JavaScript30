@@ -7,7 +7,7 @@ function handleSpeedControl({ offsetY }) {
   const speedValue = baseValue * 4
   const minValue = 0.2
   if (speedValue >= minValue) {
-    const percentage = Math.floor(baseValue * 100)
+    const percentage = Math.round(baseValue * 100)
     speedElement.style.height = `${percentage}%`
     speedElement.innerText = `${speedValue.toFixed(1)}x`
     video.playbackRate = Number(speedValue.toFixed(1))
