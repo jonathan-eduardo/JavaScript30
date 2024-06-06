@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JavaScript30 - Countdown Timer</title>
+  </head>
+  <body>
+    <section class="container">
+      <form class="custom-timer">
+        <label class="timer-label" for="timer-input">Custom timer</label>
+        <input
+          type="text"
+          class="timer-input"
+          id="timer-input"
+          data-type="minutes"
+          placeholder="Enter minutes"
+          name="timer-input"
+        />
+        <button class="btn btn-play">
+          <span class="icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="22"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="M16.13 12.62 4.036 20.67C2.737 21.532 1 20.604 1 19.049V2.95C1 1.395 2.737.467 4.035 1.331L16.13 9.378a1.946 1.946 0 0 1 0 3.242Z"
+              /></svg
+          ></span>
+        </button>
+      </form>
+      <div class="display">
+        <div class="display-info">
+          <p class="title">Timer</p>
+          <p class="timer"></p>
+          <p class="timer-end"></p>
+        </div>
+        <div class="display-message">
+          <p class="title">Select a timer</p>
+        </div>
+      </div>
+      <div class="timer-buttons">
+        <button class="btn" data-duration="20" data-type="seconds">
+          20 secs
+        </button>
+        <button class="btn" data-duration="1" data-type="minutes">
+          1 min(s)
+        </button>
+        <button class="btn" data-duration="5" data-type="minutes">
+          5 min(s)
+        </button>
+        <button class="btn" data-duration="15" data-type="minutes">
+          15 min(s)
+        </button>
+        <button class="btn" data-duration="20" data-type="minutes">
+          20 min(s)
+        </button>
+        <button class="btn" data-duration="1" data-type="hours">1 hour</button>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
