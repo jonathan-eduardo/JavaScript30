@@ -63,3 +63,5 @@ You can find the course repository here: [JavaScript30](https://github.com/wesbo
 [27 - Click and Drag](https://codepen.io/jhow_/pen/wvbgdYK)
 
 [28 - Video Speed Controller](https://codepen.io/jhow_/pen/zYQNzbV)
+
+[29 - Countdown Timer](https://codepen.io/jhow_/pen/LYoLgQx)
