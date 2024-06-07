@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JavaScript30 - Whack A Mole</title>
+  </head>
+  <body>
+    <section class="container">
+      <header class="header">
+        <h1 class="title">Whack-a-mole!</h1>
+        <span class="hits">0</span>
+      </header>
+      <main class="game">
+        <div class="mole-box">
+          <span class="icon mole"></span>
+          <span class="icon hole"></span>
+        </div>
+        <div class="mole-box">
+          <span class="icon mole"></span>
+          <span class="icon hole"></span>
+        </div>
+        <div class="mole-box">
+          <span class="icon mole"></span>
+          <span class="icon hole"></span>
+        </div>
+        <div class="mole-box">
+          <span class="icon mole"></span>
+          <span class="icon hole"></span>
+        </div>
+        <div class="mole-box">
+          <span class="icon mole"></span>
+          <span class="icon hole"></span>
+        </div>
+        <div class="mole-box">
+          <span class="icon mole"></span>
+          <span class="icon hole"></span>
+        </div>
+      </main>
+      <div class="controls">
+        <div class="difficulty">
+          <button class="btn btn-difficulty">easy</button>
+          <button class="btn btn-difficulty btn-active">normal</button>
+          <button class="btn btn-difficulty">hard</button>
+        </div>
+
+        <button class="btn btn-play">Play</button>
+      </div>
+      <audio
+        src="./sounds/hit-effect.mp3"
+        name="hit-audio"
+        class="hit-audio"
+      ></audio>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

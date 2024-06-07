@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="94"
+  height="16"
+  fill="none"
+  >
+  <path
+    fill="#000"
+    d="M0 4a4 4 0 0 1 4-4h86a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4Z"
+  />
+  <path
+    fill="#1E1E1E"
+    d="M64.634 0H90a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H49.104l15.53-16Z"
+  />
+</svg>
